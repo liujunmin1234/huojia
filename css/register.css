@@ -1,0 +1,129 @@
+body {
+	background-color: #f8f8f8;
+}
+.clearfix {
+	zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+	content: '.';
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+main .main {
+	height: 565px;
+	margin-bottom: 30px;
+	background-color: #fff;
+}
+main .float {
+	float: left;
+	width: 50%;
+}
+main .float a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 530px;
+}
+main .right {
+	float: right;
+	width: 50%;
+	padding-top: 38px;
+}
+
+main .info {
+	float: left;
+	width: 136px;
+	padding-right: 25px;
+	font-size: 16px;
+	color: #8c8c8c;
+	line-height: 40px;
+	text-align: right;
+}
+main .input {
+	position: relative;
+	float: left;
+	width: 268px;
+	height: 38px;
+	padding: 0 10px;
+	line-height: 38px;
+	border: 1px solid #d2d2d2;
+}
+main .identifying_code {
+	position: absolute;
+	right: 1px;
+	top: 1px;
+	cursor: pointer;
+}
+main .telIdentifyingBtn {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 80px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	background-color: #f0f0f0;
+	margin: 3px 3px 3px 0;
+	font-size: 12px;
+	cursor: pointer;
+}
+main .telIdentifyingBtn:hover {
+	color: #f42424;
+}
+main .item input {
+	width: 268px;
+	height: 38px;
+	border: 0;
+	outline: 0;
+}
+main .error {
+	float: left;
+	width: 342px;
+	height: 26px;
+	color: #f42424;
+	font-size: 12px;
+	padding-left: 170px;
+	line-height: 26px;
+}
+main .error label {
+	display: none;
+}
+main .item1 {
+	padding-left: 170px;
+	line-height: 25px;
+}
+main .item1 input {
+	display: none;
+}
+main .item1 label {
+	padding-left: 20px;
+	background: url('https://x.dscmall.cn/themes/ecmoban_dsc2017/images/check/checkbox_12x12.png') no-repeat left center;
+	cursor: pointer;
+}
+main .item1 .checked {
+	background-image: url('	https://x.dscmall.cn/themes/ecmoban_dsc2017/images/check/checked_solid_12x12.png');
+}
+main .item_btn {
+	padding-left: 165px;
+}
+main .item_btn input {
+	width: 287px;
+	height: 50px;
+	border: 0;
+	background: #f42424;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	outline: 0;
+	line-height: 50px;
+	cursor: pointer;
+}
+main .item_btn input:hover {
+	background: #ec5051;
+	color: #fff;
+}

@@ -1,0 +1,185 @@
+main {
+	height: 530px;
+	background: url('https://x.dscmall.cn/storage/data/afficheimg/1564453243544166182.jpg') no-repeat center;
+}
+main .login {
+	float: right;
+	width: 350px;
+	margin-top: 50px;
+	background-color: #fff;
+}
+main .head {
+	padding: 20px 40px 0;
+}
+main .tit {
+	position: relative;
+	text-align: center;
+}
+main .tit h3 {
+	position: relative;
+	display: inline-block;
+	padding: 0 15px;
+	background-color: #fff;
+	font-size: 16px;
+	color: #838383;
+	text-align: center;
+	z-index: 2;
+}
+main .tit span {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0px;
+	height: 1px;
+	width: 100%;
+	border-bottom: 1px dashed #e5e5e5;
+	z-index: 1;
+}
+main .head .qr-code {
+	position: absolute;
+	top: -12px;
+	right: -32px;
+	cursor: pointer;
+}
+main .identity-icon {
+	display: none;
+	position: absolute;
+	top: -17px;
+	right: -37px;
+	width: 57px;
+	height: 57px;
+	background: url('../images/cong/identity.png') no-repeat;
+	font-weight: 400;
+	cursor: pointer;
+}
+main .head .coagent {
+	margin-top: 20px;
+	text-align: center;
+}
+
+main .qq-icon {
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	background: url('https://x.dscmall.cn/themes/ecmoban_dsc2017/images/login-icon.png') no-repeat 0px 0px;
+	font-weight: 400;
+}
+main .qq-icon:hover {
+	background-position: -39px 0px;
+}
+
+main .login_form,
+main .qrcode_form {
+	position: relative;
+	padding: 20px 40px 30px;
+}
+main .login_error {
+	height: 25px;
+}
+main .error_info {
+	display: none;
+	font-size: 12px;
+	color: #f42424;
+}
+main .item {
+	position: relative;
+	margin-bottom: 10px;
+}
+main .input_icon {
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 9;
+}
+main .item input {
+	position: relative;
+	width: 223px;
+	padding: 5px 10px 5px 35px;
+	height: 28px;
+	border: 1px solid #d2d2d2;
+	outline: 0;
+}
+main .identifying_code {
+	position: absolute;
+	right: 1px;
+	top: 1px;
+	cursor: pointer;
+}
+main .item_button {
+	margin: 20px 0 10px 0;
+}
+main .submit {
+	width: 270px;
+	height: 40px;
+	border: 0;
+	background: #f42424;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	outline: 0;
+	border-radius: 3px;
+	cursor: pointer;
+}
+main .submit:hover {
+	background: #ec5051;
+	color: #fff;
+}
+main .notpwd {
+	display: block;
+	margin-top: 5px;
+	color: #8c8c8c;
+}
+main .notpwd:hover {
+	color: #f42424;
+}
+
+main .qrcode_main {
+	margin-top: 30px;
+	position: relative;
+}
+main .qrcode_img {
+	text-align: center;
+}
+main .qrcode_info {
+	margin-top: 20px;
+	text-align: center;
+}
+main .qrcode_info a {
+	color: #f42424;
+}
+main .qrcode_error {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 188px;
+	height: 188px;
+}
+main .qrcode_error_mask {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: -9;
+}
+main .qrcode_error p {
+	margin-top: 50px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+}
+main .qrcode_error a {
+	display: block;
+	margin: 20px auto;
+	background: #e4393c;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	color: #fbfbfb;
+	text-decoration: none;
+	text-align: center;
+}
