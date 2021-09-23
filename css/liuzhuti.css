@@ -1,0 +1,299 @@
+/* table切换 */
+.liu-top{
+    width: 100%;
+    height: 45px;
+    background: #333;
+}
+.liu-top .top-center{
+    width: 1200px;
+    height: 45px;
+    margin: 0px auto;
+}
+.liu-top .top-center .top-item{
+    width: 100px;
+    height: 45px;
+    cursor: default;
+    float: left;
+    margin-left: 10px;
+    position: relative;
+}
+.liu-top .top-center .top-item .item1{
+    position: relative;
+    line-height: 45px;
+    height: 45px;
+    padding: 0;
+    margin: 0 10px;
+    width: 80px;
+    z-index: 2;
+    text-align: center;
+    background: none;
+}
+.liu-top .top-center .top-item .item1 a{
+    color: white;
+    font-size: 14px;
+}
+.liu-top .top-center .top-item  .sanjiao{
+    width: 0px;
+    height: 0px;
+    border: 7px solid transparent;
+    border-bottom: 7px solid white;
+    position: absolute;
+    left: 50px;
+    margin-left: -7px;
+    bottom: 0px;
+}
+.liu-top .top-center .top-item .liu-nav{
+    position: absolute;
+    width: 1200px;
+    min-height: 154px;
+    top: 45px;
+    background-color: #fff;
+    left: 0;
+    overflow: hidden;
+    border: 0 none;
+    z-index: 2;
+    box-shadow: 0px 3px 14px 0px rgb(0 0 0 / 20%);
+    padding: 20px 20px 0;
+    box-sizing: border-box;
+}
+.liu-top .top-center .top-item .liu-nav .nav1{
+    padding-bottom: 7px;
+    border-bottom: 1px solid red;
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 80px;
+}
+.liu-top .top-center .top-item .liu-nav .nav15{
+    height: 40px;
+}
+.liu-top .top-center .top-item .liu-nav .nav2{
+    float: left;
+    font-size: 14px;
+    margin-right: 40px;
+    word-break: break-all;
+    overflow: hidden;
+    height: 24px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    line-height: 24px;
+}
+.liu-top .top-center .top-item .liu-nav .tu{
+    width: 1000px;
+    height: 55px;
+}
+.liu-top .top-center .top-item .liu-nav .tu .tu1{
+    width: 120px;
+    height: 55px;
+    float: left;
+}
+.liu-top .top-center .top-item .liu-nav .tu .tu1 img{
+    width: 120px;
+    height: 55px;
+}
+.liu-banner{
+    height: 390px;
+    width: 1900px;
+  
+    margin: 0 auto;
+    margin-left: -360px;
+    background: url(../images/liuzhutiimages/banner.jpg) no-repeat;
+}
+ .liu-ban{
+    width: 1200px;
+  height: 390px;
+    margin: 0 auto;
+}
+.liu-zhuti{
+    width: 1200px;
+    margin: 0 auto;
+}
+.liu-zhuti .zhuti-tuijian{
+    width: 1200px;
+    height: 374px;
+    margin: 30px 0;
+}
+.liu-zhuti .zhuti-tuijian .hd{
+    width: 1200px;
+    height: 42px;
+    line-height: 42px;
+    margin-bottom: 12px;
+}
+.liu-zhuti .zhuti-tuijian .hd .hd1{
+    width: 93px;
+    height: 42px;
+    float: left;
+    padding: 0 15px;
+    position: relative;
+    font-size: 21px;
+    cursor: pointer;
+    text-align: center;
+}
+.liu-zhuti .zhuti-tuijian .hd .xian{
+    width: 1px;
+    height: 30px;
+    background-color: #EFEFEF;
+    float: left;
+    margin-top: 5px;
+}
+.liu-zhuti .zhuti-tuijian .bd{
+    width: 1200px;
+    height: 320px;
+ 
+}
+.liu-zhuti .zhuti-tuijian .bd .bd1{
+    width: 199px;
+    padding: 20px;
+    border: 1px solid #efefef;
+    margin-right: -1px;
+    background: #fff;
+    float: left;
+    height: 290px;
+    position: relative;
+    border: 1px solid #efefef;
+    
+}
+.liu-zhuti .zhuti-tuijian .bd-pos{
+    position: absolute;
+    top: 700px;
+}
+.liu-zhuti .zhuti-tuijian .bd .bd1 .bd1-images{
+    width: 199px;
+    height: 199px;
+}
+.liu-zhuti .zhuti-tuijian .bd .bd1 .bd1-id{
+    width: 44px;
+    height: 105px;
+    float: left;
+    font-size: 70px;
+    color: red;
+    margin-left: -7px;
+}
+.liu-zhuti .zhuti-tuijian .bd .bd1 .bd1-name{
+    width: 159px;
+    margin: 10px 0 5px 40px;
+    height: 36px;
+   font-size: 12px;
+   overflow: hidden;
+}
+.liu-zhuti .zhuti-tuijian .bd .bd1 .bd1-price{
+    width: 159px;
+    margin: 10px 0 5px 40px;
+    height: 36px;
+    overflow: hidden;
+   line-height: 36px;
+   font-size: 14px;
+   color: red;
+}
+.liu-pingpai{
+    width: 1200px;
+    height: 134px;
+    margin: 30px 0;
+}
+.liu-pingpai .hd{
+    width: 1200px;
+    height: 42px;
+    font-size: 21px;
+}
+.liu-pingpai .bd{
+    width: 1200px;
+    height: 80px;
+    border: 1px solid #EFEFEF;
+}
+.liu-pingpai .bd .leftjian{
+    width: 20px;
+    height: 30px;
+    margin: 25px 10px;
+    font-size: 25px;
+    float: left;
+}
+.liu-pingpai .bd .rightjian{
+    width: 20px;
+    height: 30px;
+    margin: 25px 10px;
+    font-size: 25px;
+    float: right;
+}
+.liu-pingpai .bd .text{
+    width: 1008px;
+    height: 30px;
+    margin: 30px 45px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    
+}
+.liu-pingpai .bd .text .textimg{
+    width: 2300px;
+    height: 30px;
+    position: absolute;
+}
+.liu-pingpai .bd .text .textimg img{
+    width: 90px;
+    height: 30px;
+}
+.liu-main{
+   width: 1200px;
+   margin: 0 auto;
+   height: 1880px;
+}
+.liu-main .main-today{
+    width: 1200px;
+    height: 712px;
+    margin: 30px 0;
+}
+.liu-main .main-today .hd{
+    width: 1200px;
+    height: 42px;
+    font-size: 21px;
+    margin-left: 15px;
+}
+.liu-main .main-today .bd{
+    width: 1200px;
+    height: 320px;
+ 
+}
+.liu-main .main-today .bd .bd1{
+    width: 199px;
+    padding: 20px;
+    border: 1px solid #efefef;
+    margin-right: -1px;
+    background: #fff;
+    float: left;
+    height: 290px;
+    position: relative;
+    border: 1px solid #efefef;
+    
+}
+.liu-main .main-today .bd-pos{
+    position: absolute;
+    top: 520px;
+}
+.liu-main .main-today .bd .bd1 .bd1-images{
+    width: 199px;
+    height: 199px;
+}
+.liu-main .main-today .bd .bd1 .bd1-id{
+    width: 44px;
+    height: 105px;
+    float: left;
+    font-size: 70px;
+    color: red;
+    margin-left: -7px;
+}
+.liu-main .main-today .bd .bd1 .bd1-name{
+    width: 194px;
+    margin: 10px 0 5px 5px;
+    height: 36px;
+   font-size: 12px;
+   overflow: hidden;
+}
+.liu-main .main-today .bd .bd1 .bd1-price{
+    width: 194px;
+    margin: 10px 0 5px 5px;
+    height: 36px;
+    overflow: hidden;
+    font-size: 14px;
+   line-height: 36px;
+   font-size: 14px;
+   color: red;
+}
