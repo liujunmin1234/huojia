@@ -1,37 +1,1480 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
-    <link href="css/main.css" rel="stylesheet">
+    <meta name="Keywords" content="大商创商城系统 B2B2C 多商户系统  多店铺商城系统 企业级电商系统" />
+    <meta name="Description" content="大商创是由商创网络（模板堂）推出的B2B2C商城系统，支持多店铺入驻，包含多城市多仓库等众多功能，能帮助企业及个人快速搭建多商户电商系统，并减少二次开发带来的成本" />
+
+    <title>大商创商城系统 B2B2C 多商户系统 多店铺商城系统 企业级电商系统</title>
+    <link rel=" icon" href="images/xue-image/favicon.ico" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/init.css">
+    <link rel="stylesheet" href="./lib/swiper-6.1.2/package/swiper-bundle.min.css">
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/side-bar.css">
+    <script src="js/data.js"></script>
+    <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+
+
 </head>
 
 <body>
-    <form class="form-inline">
-        <div data-toggle="distpicker">
-            <div class="form-group">
-                <label class="sr-only" for="province1">Province</label>
-                <select class="form-control" id="province1"></select>
+    <!-- 头部广告 -->
+    <div class="top-banner">
+
+        <div class="w1200">
+            <a href="">
+                <img src="images/xue-image/01-gg.jpg" alt="">
+            </a>
+            <div id="gb">X</div>
+        </div>
+
+    </div>
+    <!-- -------头部公共样式------- -->
+    <header class="w1200">
+        <a href="">
+            <div class="h-img">
+                <img src="images/xue-image/shop_logo.gif">
             </div>
-            <div class="form-group">
-                <label class="sr-only" for="city1">City</label>
-                <select class="form-control" id="city1"></select>
+        </a>
+        <div class="h-top">
+            <div class="h-city">
+                <img src="./images/xue-image/地图.png" width="20px" height="25px" alt="">
+                <span>郑州市</span>
             </div>
-            <div class="form-group">
-                <label class="sr-only" for="district1">District</label>
-                <select class="form-control" id="district1"></select>
+            <div>
+                <a href="page/login.html" class="h-place">请登录</a>&emsp;
+                <a href="page/register.html">免费注册</a>
+            </div>
+            <ul>
+                <li>
+                    <a href="">我的订单</a>
+                </li>
+                <li>
+                    <a href="">我的浏览</a>
+                </li>
+                <li>
+                    <a href="">我的收藏</a>
+                </li>
+                <li>
+                    <a href="">客户服务</a>
+                </li>
+                <li>
+                    <div class="h-khdh1">
+                        <a href="">客户导航 <img src="images/xue-image/向下箭头.png"></a>
+                    </div>
+                    <div class="h-khdh2">
+                        <dl>
+                            <dt><a href="">特色主题</a></dt>
+                            <dd><a href="">男装女装</a></dd>
+                            <dd><a href="">鞋靴箱包</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="">促销活动</a></dt>
+                            <dd><a href="">拍卖活动</a></dd>
+                            <dd><a href="">共创商品</a></dd>
+                            <dd><a href="">积分商城</a></dd>
+                            <dd><a href="">cms频道</a></dd>
+                            <dd><a href="">优惠活动</a></dd>
+                            <dd><a href="">超值礼包</a></dd>
+                            <dd><a href="">优惠券</a></dd>
+                            <dd><a href="">礼品卡</a></dd>
+                            <dd><a href="">预售商品</a></dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <div class="h-down">
+            <div>
+                <div class="h-gwc">
+                    <a href="">
+                        <div class="h-gwc-up">
+                            <img src="./images/xue-image/购物车.png"> &nbsp;
+                            <span>我的购物车</span>
+                            <i>0</i>
+                        </div>
+                    </a>
+                    <div class="h-gwc-down">
+                        <img src="images/common/cart-nogoods.png" width="90px">
+                        <span>购物车中还没有商品，赶紧选购吧!</span>
+                    </div>
+                </div>
+
+                <input type="search" placeholder="周大福"><input type="button" value="搜商品"> <input type="button" value="搜店铺">
+
             </div>
         </div>
-    </form>
-    <script src="http://libs.useso.com/js/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
-    <script src="js/distpicker.data.js"></script>
-    <script src="js/distpicker.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    </header>
+    <!-- -----------导航栏------------- -->
+    <nav class="w1200">
+        <!-- 商品分类跳转 -->
+        <a href="javascript:;">
+            <div class="nav-div">全部商品分类</div>
+        </a>
+        <!-------------- 跳转页面的链接加在这 ------------>
+        <ul class="nav-ul">
+            <li>
+                <a href="index.html">首页</a>
+            </li>
+            <li>
+                <a href="page/li.html">个护美妆</a>
+            </li>
+            <li>
+                <a href="page/dress.html">服装城</a>
+            </li>
+            <li>
+                <a href="page/domestic.html">家用电器</a>
+            </li>
+            <li>
+                <a href="page/liu.html">鞋靴箱包</a>
+            </li>
+            <li>
+                <a href="page/juhuasuan.html">聚划算</a>
+            </li>
+            <li>
+                <a href="page/yushou.html">预售</a>
+            </li>
+            <li>
+                <a href="page/dianpujie.html">店铺街</a>
+            </li>
+            <li>
+                <a href="page/pinpaizhuanqu.html">品牌专区</a>
+            </li>
+            <li>
+                <a href="page/gonggao.html">公告</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- 滚动指定距离显示的头部搜索框 -->
+    <div class="hSearch">
+        <div class="w1200">
+            <div class="hSearch-0">
+                <a href="">
+                    <div class="hSearch-1">全部商品分类
+                    </div>
+                </a>
+                <div class="hs-ejdh">
+                    <ul class="two-ulList">
+                        <li>
+                            <div class="two-ulList-img">
+                                <img src="./images/xue-image/02-list.png" alt="">
+                            </div>
+                            <!-- 用于存放列表项标题 -->
+                            <p></p>
+                            <!-- 用于存放列表项标题 下方-->
+                            <span></span>
+                        </li>
+                        <li>
+                            <div class="two-ulList-img">
+                                <img src="./images/xue-image/02-list.png" alt="">
+                            </div>
+                            <!-- 用于存放列表项标题 -->
+                            <p></p>
+                            <!-- 用于存放列表项标题 下方-->
+                            <span></span>
+                        </li>
+                        <li>
+                            <div class="two-ulList-img">
+                                <img src="./images/xue-image/02-list.png" alt="">
+                            </div>
+                            <!-- 用于存放列表项标题 -->
+                            <p></p>
+                            <!-- 用于存放列表项标题 下方-->
+                            <span></span>
+                        </li>
+                        <li>
+                            <div class="two-ulList-img">
+                                <img src="./images/xue-image/02-list.png" alt="">
+                            </div>
+                            <!-- 用于存放列表项标题 -->
+                            <p></p>
+                            <!-- 用于存放列表项标题 下方-->
+                            <span></span>
+                        </li>
+                        <li>
+                            <div class="two-ulList-img">
+                                <img src="./images/xue-image/02-list.png" alt="">
+                            </div>
+                            <!-- 用于存放列表项标题 -->
+                            <p></p>
+                            <!-- 用于存放列表项标题 下方-->
+                            <span></span>
+                        </li>
+                        <li>
+                            <div class="two-ulList-img">
+                                <img src="./images/xue-image/02-list.png" alt="">
+                            </div>
+                            <!-- 用于存放列表项标题 -->
+                            <p></p>
+                            <!-- 用于存放列表项标题 下方-->
+                            <span></span>
+                        </li>
+                        <li>
+                            <div class="two-ulList-img">
+                                <img src="./images/xue-image/02-list.png" alt="">
+                            </div>
+                            <!-- 用于存放列表项标题 -->
+                            <p></p>
+                            <!-- 用于存放列表项标题 下方-->
+                            <span></span>
+                        </li>
+                    </ul>
+                    <ol class="two-olList">
+                        <li>
+                            <div class="two-olList-left">
+                                <div class="two-olList-leftUp">
+                                    <!-- 用于存放上方标题 -->
+                                    <!-- 在标签中添加a包括的span -->
+                                    <!-- <a href="javascript:;"><span></span></a> -->
+                                </div>
+                                <div class="two-olList-leftDown">
+                                    <!-- 每一行的标题 -->
+                                    <a href=""></a>
+                                    <!-- 每一行中的详细商品 -->
+                                    <!-- a -->
+                                    <p>
+                                    </p>
+                                </div>
+                            </div>
+                            <ul class="two-olList-right">
+                                <!-- 添加li中的a包括的img标签 -->
+
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="two-olList-left">
+                                <div class="two-olList-leftUp">
+                                    <!-- 用于存放上方标题 -->
+                                    <!-- 在标签中添加a包括的span -->
+                                    <!-- <a href="javascript:;"><span></span></a> -->
+                                </div>
+                                <div class="two-olList-leftDown">
+                                    <!-- 每一行的标题 -->
+                                    <a href=""></a>
+                                    <!-- 每一行中的详细商品 -->
+                                    <p>
+
+                                    </p>
+                                </div>
+                            </div>
+                            <ul class="two-olList-right">
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="two-olList-left">
+                                <div class="two-olList-leftUp">
+                                    <!-- 用于存放上方标题 -->
+                                    <!-- 在标签中添加a包括的span -->
+                                    <!-- <a href="javascript:;"><span></span></a> -->
+                                </div>
+                                <div class="two-olList-leftDown">
+                                    <!-- 每一行的标题 -->
+                                    <a href=""></a>
+                                    <!-- 每一行中的详细商品 -->
+                                    <p>
+
+                                    </p>
+                                </div>
+                            </div>
+                            <ul class="two-olList-right">
+
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="two-olList-left">
+                                <div class="two-olList-leftUp">
+                                    <!-- 用于存放上方标题 -->
+                                    <!-- 在标签中添加a包括的span -->
+                                    <!-- <a href="javascript:;"><span></span></a> -->
+                                </div>
+                                <div class="two-olList-leftDown">
+                                    <!-- 每一行的标题 -->
+                                    <a href=""></a>
+                                    <!-- 每一行中的详细商品 -->
+                                    <!-- a -->
+                                    <p>
+                                    </p>
+                                </div>
+                            </div>
+                            <ul class="two-olList-right">
+                                <!-- 添加li中的a包括的img标签 -->
+
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="two-olList-left">
+                                <div class="two-olList-leftUp">
+                                    <!-- 用于存放上方标题 -->
+                                    <!-- 在标签中添加a包括的span -->
+                                    <!-- <a href="javascript:;"><span></span></a> -->
+                                </div>
+                                <div class="two-olList-leftDown">
+                                    <!-- 每一行的标题 -->
+                                    <a href=""></a>
+                                    <!-- 每一行中的详细商品 -->
+                                    <p>
+
+                                    </p>
+                                </div>
+                            </div>
+                            <ul class="two-olList-right">
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="two-olList-left">
+                                <div class="two-olList-leftUp">
+                                    <!-- 用于存放上方标题 -->
+                                    <!-- 在标签中添加a包括的span -->
+                                    <!-- <a href="javascript:;"><span></span></a> -->
+                                </div>
+                                <div class="two-olList-leftDown">
+                                    <!-- 每一行的标题 -->
+                                    <a href=""></a>
+                                    <!-- 每一行中的详细商品 -->
+                                    <p>
+
+                                    </p>
+                                </div>
+                            </div>
+                            <ul class="two-olList-right">
+
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="two-olList-left">
+                                <div class="two-olList-leftUp">
+                                    <!-- 用于存放上方标题 -->
+                                    <!-- 在标签中添加a包括的span -->
+                                    <!-- <a href="javascript:;"><span></span></a> -->
+                                </div>
+                                <div class="two-olList-leftDown">
+                                    <!-- 每一行的标题 -->
+                                    <a href=""></a>
+                                    <!-- 每一行中的详细商品 -->
+                                    <p>
+
+                                    </p>
+                                </div>
+                            </div>
+                            <ul class="two-olList-right">
+
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="hSearch-2">
+                <input type="search" placeholder="手机"><input type="button" value="搜商品">
+                <input type="button" value="搜店铺">
+            </div>
+            <div class="hSearch-3">
+                <a href="page/login.html"><span>登录</span> |</a>
+                <a href="page/register.html"><span>注册</span></a>
+            </div>
+            <div class="hSearch-4">
+                <img src="images/xue-image/购物车.png" width="20" alt="">
+                <span>0</span>
+            </div>
+        </div>
+    </div>
+    <!-- -----二级导航---轮播图 -->
+    <div class="two">
+        <img src="images/xue-image/02-bj.png" class="two-img ">
+        <div class="w1200">
+            <!-- 二级导航 -->
+            <ul class="two-ulList">
+                <li>
+                    <div class="two-ulList-img">
+                        <img src="./images/xue-image/02-list.png" alt="">
+                    </div>
+                    <!-- 用于存放列表项标题 -->
+                    <p></p>
+                    <!-- 用于存放列表项标题 下方-->
+                    <span></span>
+                </li>
+                <li>
+                    <div class="two-ulList-img">
+                        <img src="./images/xue-image/02-list.png" alt="">
+                    </div>
+                    <!-- 用于存放列表项标题 -->
+                    <p></p>
+                    <!-- 用于存放列表项标题 下方-->
+                    <span></span>
+                </li>
+                <li>
+                    <div class="two-ulList-img">
+                        <img src="./images/xue-image/02-list.png" alt="">
+                    </div>
+                    <!-- 用于存放列表项标题 -->
+                    <p></p>
+                    <!-- 用于存放列表项标题 下方-->
+                    <span></span>
+                </li>
+                <li>
+                    <div class="two-ulList-img">
+                        <img src="./images/xue-image/02-list.png" alt="">
+                    </div>
+                    <!-- 用于存放列表项标题 -->
+                    <p></p>
+                    <!-- 用于存放列表项标题 下方-->
+                    <span></span>
+                </li>
+                <li>
+                    <div class="two-ulList-img">
+                        <img src="./images/xue-image/02-list.png" alt="">
+                    </div>
+                    <!-- 用于存放列表项标题 -->
+                    <p></p>
+                    <!-- 用于存放列表项标题 下方-->
+                    <span></span>
+                </li>
+                <li>
+                    <div class="two-ulList-img">
+                        <img src="./images/xue-image/02-list.png" alt="">
+                    </div>
+                    <!-- 用于存放列表项标题 -->
+                    <p></p>
+                    <!-- 用于存放列表项标题 下方-->
+                    <span></span>
+                </li>
+                <li>
+                    <div class="two-ulList-img">
+                        <img src="./images/xue-image/02-list.png" alt="">
+                    </div>
+                    <!-- 用于存放列表项标题 -->
+                    <p></p>
+                    <!-- 用于存放列表项标题 下方-->
+                    <span></span>
+                </li>
+            </ul>
+            <ol class="two-olList">
+                <li>
+                    <div class="two-olList-left">
+                        <div class="two-olList-leftUp">
+                            <!-- 用于存放上方标题 -->
+                            <!-- 在标签中添加a包括的span -->
+                            <!-- <a href="javascript:;"><span></span></a> -->
+                        </div>
+                        <div class="two-olList-leftDown">
+                            <!-- 每一行的标题 -->
+                            <a href=""></a>
+                            <!-- 每一行中的详细商品 -->
+                            <!-- a -->
+                            <p>
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="two-olList-right">
+                        <!-- 添加li中的a包括的img标签 -->
+
+                    </ul>
+                </li>
+                <li>
+                    <div class="two-olList-left">
+                        <div class="two-olList-leftUp">
+                            <!-- 用于存放上方标题 -->
+                            <!-- 在标签中添加a包括的span -->
+                            <!-- <a href="javascript:;"><span></span></a> -->
+                        </div>
+                        <div class="two-olList-leftDown">
+                            <!-- 每一行的标题 -->
+                            <a href=""></a>
+                            <!-- 每一行中的详细商品 -->
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="two-olList-right">
+                    </ul>
+                </li>
+                <li>
+                    <div class="two-olList-left">
+                        <div class="two-olList-leftUp">
+                            <!-- 用于存放上方标题 -->
+                            <!-- 在标签中添加a包括的span -->
+                            <!-- <a href="javascript:;"><span></span></a> -->
+                        </div>
+                        <div class="two-olList-leftDown">
+                            <!-- 每一行的标题 -->
+                            <a href=""></a>
+                            <!-- 每一行中的详细商品 -->
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="two-olList-right">
+
+                    </ul>
+                </li>
+                <li>
+                    <div class="two-olList-left">
+                        <div class="two-olList-leftUp">
+                            <!-- 用于存放上方标题 -->
+                            <!-- 在标签中添加a包括的span -->
+                            <!-- <a href="javascript:;"><span></span></a> -->
+                        </div>
+                        <div class="two-olList-leftDown">
+                            <!-- 每一行的标题 -->
+                            <a href=""></a>
+                            <!-- 每一行中的详细商品 -->
+                            <!-- a -->
+                            <p>
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="two-olList-right">
+                        <!-- 添加li中的a包括的img标签 -->
+
+                    </ul>
+                </li>
+                <li>
+                    <div class="two-olList-left">
+                        <div class="two-olList-leftUp">
+                            <!-- 用于存放上方标题 -->
+                            <!-- 在标签中添加a包括的span -->
+                            <!-- <a href="javascript:;"><span></span></a> -->
+                        </div>
+                        <div class="two-olList-leftDown">
+                            <!-- 每一行的标题 -->
+                            <a href=""></a>
+                            <!-- 每一行中的详细商品 -->
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="two-olList-right">
+                    </ul>
+                </li>
+                <li>
+                    <div class="two-olList-left">
+                        <div class="two-olList-leftUp">
+                            <!-- 用于存放上方标题 -->
+                            <!-- 在标签中添加a包括的span -->
+                            <!-- <a href="javascript:;"><span></span></a> -->
+                        </div>
+                        <div class="two-olList-leftDown">
+                            <!-- 每一行的标题 -->
+                            <a href=""></a>
+                            <!-- 每一行中的详细商品 -->
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="two-olList-right">
+
+                    </ul>
+                </li>
+                <li>
+                    <div class="two-olList-left">
+                        <div class="two-olList-leftUp">
+                            <!-- 用于存放上方标题 -->
+                            <!-- 在标签中添加a包括的span -->
+                            <!-- <a href="javascript:;"><span></span></a> -->
+                        </div>
+                        <div class="two-olList-leftDown">
+                            <!-- 每一行的标题 -->
+                            <a href=""></a>
+                            <!-- 每一行中的详细商品 -->
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="two-olList-right">
+
+                    </ul>
+                </li>
+            </ol>
+            <!-- 轮播图插件 -->
+            <div class="two-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/xue-image/02-lbt1.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/xue-image/02-lbt2.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/xue-image/02-lbt3.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/xue-image/02-lbt4.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/xue-image/02-lbt5.jpg" alt="" />
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev "></div>
+            </div>
+            <!-- 头像部分 -->
+            <div class="two-div ">
+                <div class="two-div-1 ">
+                    <img src="./images/xue-image/02-touxiang.png ">
+                    <h4>Hi,欢迎来到大商创!</h4>
+                    <button><a href="page/login.html ">请登录</a></button>
+                    <button class="two-div-btn1 "><a href=" ">我要开店</a></button>
+                </div>
+                <ul class="two-div-2 ">
+                    <li class=" two-div-active ">
+                        <a href=" ">公告</a>
+                        <ol>
+                            <li><a href=" ">服装店突破2000多家</a></li>
+                            <li><a href=" ">我们成为中国最大家电零售B2B2C系统</a></li>
+                            <li><a href=" ">三大国际腕表品牌签约</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href=" ">促销</a>
+                        <ol>
+                            <li><a href=" ">春季家装季，家电买一送一</a></li>
+                            <li><a href=" ">抢百元优惠券，享4.22%活期</a></li>
+                            <li><a href=" ">Macbook最高返50000消费豆！</a></li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2>快捷入口</h2>
+                <ul class="two-div-3 ">
+                    <li>
+                        <a href=" ">
+                            <img src="./images/xue-image/02-zuji.png " alt=" ">
+                            <p>我的浏览</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=" ">
+                            <img src="./images/xue-image/02-shoucang.png " alt=" ">
+                            <p>我的浏览</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=" ">
+                            <img src="./images/xue-image/02-dingdan.png " alt=" ">
+                            <p>我的浏览</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=" ">
+                            <img src="./images/xue-image/02-zhanghu.png " alt=" ">
+                            <p>我的浏览</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=" ">
+                            <img src="./images/xue-image/02-fenxiang.png " alt=" ">
+                            <p>我的浏览</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=" ">
+                            <img src="./images/xue-image/02-ruzhu.png " alt=" ">
+                            <p>我的浏览</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="super w1200 TL ">
+        <a href=" "> <img src="images/xue-image/03-superDay.png " alt=" "></a>
+    </div>
+    <!-- 套用的模板 -->
+    <div class="three w1200 ">
+        <ul class="three-qg ">
+            <li>
+                <a href=" "><img src="./images/xue-image/03-qg1.png " alt=" "></a>
+            </li>
+            <li>
+                <a href=" "><img src="./images/xue-image/03-qg2.png " alt=" "></a>
+            </li>
+            <li>
+                <a href=" "><img src="./images/xue-image/03-qg3.png " alt=" "></a>
+            </li>
+            <li>
+                <a href=" "><img src="./images/xue-image/03-qg4.png " alt=" "></a>
+            </li>
+            <li>
+                <a href=" "><img src="./images/xue-image/03-qg5.png " alt=" "></a>
+            </li>
+        </ul>
+        <p class="three-title TL ">
+            <span>好货大聚优惠</span>
+            <span>周年庆第一波，每天5场限时秒杀</span>
+            <a href=" ">更多周年好货 &gt;</a>
+        </p>
+        <!-- 套用的模板 -->
+        <div class="threeLbt ">
+            <ul>
+                <!-- 套用的模板 -->
+                <li>
+                    <a href=" ">
+                        <img src="./images/xue-image/03-lbt3.jpg " alt=" ">
+                    </a>
+                    <a href=" ">
+                        <p>韩都衣舍2018韩版女装秋装千鸟格外套裙子潮两件时尚套</p>
+                    </a>
+                    <span class="threeLbt-h ">￥271.00</span>
+                    <span class="threeLbt-sc ">357.79</span>
+                </li>
+                <li>
+                    <a href=" ">
+                        <img src="./images/xue-image/03-lbt2.jpg " alt=" ">
+                    </a>
+                    <a href=" ">
+                        <p>韩都衣舍2018韩版女装秋装千鸟格外套裙子潮两件时尚套</p>
+                    </a>
+                    <span class="threeLbt-h ">￥272.00</span>
+                    <span class="threeLbt-sc ">357.79</span>
+                </li>
+                <li>
+                    <a href=" ">
+                        <img src="./images/xue-image/03-lbt3.jpg " alt=" ">
+                    </a>
+                    <a href=" ">
+                        <p>韩都衣舍2018韩版女装秋装千鸟格外套裙子潮两件时尚套</p>
+                    </a>
+                    <span class="threeLbt-h ">￥273.00</span>
+                    <span class="threeLbt-sc ">357.79</span>
+                </li>
+                <li>
+                    <a href=" ">
+                        <img src="./images/xue-image/03-lbt1.jpg " alt=" ">
+                    </a>
+                    <a href=" ">
+                        <p>韩都衣舍2018韩版女装秋装千鸟格外套裙子潮两件时尚套</p>
+                    </a>
+                    <span class="threeLbt-h ">￥274.00</span>
+                    <span class="threeLbt-sc ">357.79</span>
+                </li>
+                <li>
+                    <a href=" ">
+                        <img src="./images/xue-image/03-lbt3.jpg " alt=" ">
+                    </a>
+                    <a href=" ">
+                        <p>韩都衣舍2018韩版女装秋装千鸟格外套裙子潮两件时尚套</p>
+                    </a>
+                    <span class="threeLbt-h ">￥275.00</span>
+                    <span class="threeLbt-sc ">357.79</span>
+                </li>
+                <li>
+                    <a href=" ">
+                        <img src="./images/xue-image/03-lbt1.jpg " alt=" ">
+                    </a>
+                    <a href=" ">
+                        <p>韩都衣舍2018韩版女装秋装千鸟格外套裙子潮两件时尚套</p>
+                    </a>
+                    <span class="threeLbt-h ">￥276.00</span>
+                    <span class="threeLbt-sc ">357.79</span>
+                </li>
+            </ul>
+            <div class="threeLbt-left ">&lt;</div>
+            <div class="threeLbt-right ">&gt;</div>
+        </div>
+    </div>
+    <div class="four w1200 TL ">
+        <div class="four-img ">
+            <a href=" "> <img src="./images/xue-image/04-bj.png " alt=" "></a>
+        </div>
+        <ul class="four-list ">
+            <li>
+                <a href=" "><img src="./images/xue-image/04-10.jpg "></a>
+            </li>
+            <li>
+                <a href=" "><img src="./images/xue-image/04-11.jpg "></a>
+            </li>
+            <li>
+                <a href=" "><img src="./images/xue-image/04-1.jpg "></a>
+            </li>
+            <li>
+                <a href=" "><img src="./images/xue-image/04-13.jpg "></a>
+            </li>
+            <li>
+                <a href=" "><img src="./images/xue-image/04-14.jpg "></a>
+            </li>
+            <li>
+                <a href=" "><img src="./images/xue-image/04-15.jpg "></a>
+            </li>
+            <li>
+                <a href=" "><img src="./images/xue-image/04-16.jpg "></a>
+            </li>
+            <li>
+                <a href=" "><img src="./images/xue-image/04-17.jpg "></a>
+            </li>
+            <li>
+                <a href=" "><img src="./images/xue-image/04-18.jpg "></a>
+            </li>
+            <li>
+                <a href=" "><img src="./images/xue-image/04-19.jpg "></a>
+            </li>
+            <li class="four-list-long ">
+                <a href=" "><img src="./images/xue-image/04-21.jpg "></a>
+            </li>
+            <li class="four-list-long ">
+                <a href=" "><img src="./images/xue-image/04-22.jpg "></a>
+            </li>
+            <li class="four-list-long ">
+                <a href=" "><img src="./images/xue-image/04-23.jpg "></a>
+            </li>
+            <li class="four-list-long ">
+                <a href=" "><img src="./images/xue-image/04-2.jpg "></a>
+            </li>
+        </ul>
+    </div>
+    <div class="five w1200 TL ">
+        <div class="five-one five-T ">
+            <p>
+                发现好货
+                <a href=" ">更多好货&gt;</a>
+            </p>
+            <div class="five-O ">
+                <div class="five-one-left ">
+                    <div>
+                        <a href=" "><img src="images/xue-image/05-1.jpg " width="160px " alt=" "></a>
+                    </div><br>
+                    <hr>
+                    <h4>阿迪达斯三叶草</h4>
+                    <p>也许是每一款经典系列都应该有一个独特的故事吧</p><br>
+                    <a href=" ">点击查看</a>
+                </div>
+                <ul class="five-one-right ">
+                    <li>
+                        <a href=" "><img src="images/xue-image/05-2.jpg " alt=" "></a>
+                        <div>
+                            <h6>华为智能腕表</h6>
+                            <p>防水蓝宝石玻璃镜面</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href=" "><img src="images/xue-image/05-2.jpg " alt=" "></a>
+                        <h6>华为智能腕表</h6>
+                        <p>防水蓝宝石玻璃镜面</p>
+                    </li>
+                    <li>
+                        <a href=" "><img src="images/xue-image/05-2.jpg " alt=" "></a>
+                        <h6>华为智能腕表</h6>
+                        <p>防水蓝宝石玻璃镜面</p>
+                    </li>
+                    <li>
+                        <a href=" "><img src="images/xue-image/05-2.jpg " alt=" "></a>
+                        <h6>华为智能腕表</h6>
+                        <p>防水蓝宝石玻璃镜面</p>
+                    </li>
+                    <li>
+                        <a href=" "><img src="images/xue-image/05-2.jpg " alt=" "></a>
+                        <h6>华为智能腕表</h6>
+                        <p>防水蓝宝石玻璃镜面</p>
+                    </li>
+                    <li>
+                        <a href=" "><img src="images/xue-image/05-2.jpg " alt=" "></a>
+                        <h6>华为智能腕表</h6>
+                        <p>防水蓝宝石玻璃镜面</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="five-two five-T ">
+            <p>
+                特色推荐
+                <a href=" ">更多特色推荐&gt;</a>
+            </p>
+            <div class="five-O ">
+                <div class="five-two-left ">
+                    <div>
+                        <p>
+                            <span></span>
+                        </p>
+                        <a href=" "> <img src="./images/xue-image/05-3.jpg " alt=" "></a>
+                    </div>
+                    <div>
+                        <p>
+                            <span></span>
+                        </p>
+                        <a href=" "> <img src="./images/xue-image/05-3.jpg " alt=" "></a>
+                    </div>
+                </div>
+                <div class="five-two-right ">
+                    <div>
+                        <p>
+                            <span></span>
+                        </p>
+                        <a href=" "> <img src="./images/xue-image/05-3.jpg " alt=" "></a>
+                    </div>
+                    <div>
+                        <p>
+                            <span></span>
+                        </p>
+                        <a href=" "> <img src="./images/xue-image/05-3.jpg " alt=" "></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="six w1200 TL ">
+        <div class="six-one five-T ">
+            <p>
+                特卖
+                <a href=" ">更多特卖&gt;</a>
+            </p>
+            <div class="five-O ">
+                <div class="six-one-left ">
+                    <div class="six-one-1 ">
+                        <a href=" ">
+                            <h4>新年心愿单</h4>
+                            <p>满269减50，满999减100</p>
+                            <img src="./images/xue-image/06-1.jpg " alt=" ">
+                        </a>
+                    </div>
+                    <div class="six-one-2 ">
+                        <a href=" ">
+                            <div>
+                                <h4>Ms.Maggie 冬季时尚</h4><br>
+                                <p>满199减100</p>
+                            </div>
+                            <div> <img src="./images/xue-image/06-1.jpg " alt=" "></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="six-one-right ">
+                    <div class="six-one-2 ">
+                        <a href=" ">
+                            <div>
+                                <h4>Ms.Maggie 冬季时尚</h4><br>
+                                <p>满199减100</p>
+                            </div>
+                            <div> <img src="./images/xue-image/06-1.jpg " alt=" "></div>
+                        </a>
+                    </div>
+                    <div class="six-one-2 ">
+                        <a href=" ">
+                            <div>
+                                <h4>Ms.Maggie 冬季时尚</h4><br>
+                                <p>满199减100</p>
+                            </div>
+                            <div> <img src="./images/xue-image/06-1.jpg " alt=" "></div>
+                        </a>
+                    </div>
+                    <div class="six-one-2 ">
+                        <a href=" ">
+                            <div>
+                                <h4>Ms.Maggie 冬季时尚</h4><br>
+                                <p>满199减100</p>
+                            </div>
+                            <div> <img src="./images/xue-image/06-1.jpg " alt=" "></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="six-two five-T ">
+            <p>
+                新品
+                <a href=" ">更多新品&gt;</a>
+            </p>
+            <div class="five-O ">
+                <div class="six-one-2 ">
+                    <a href=" ">
+                        <div>
+                            <h4>Ms.Maggie 冬季时尚</h4><br>
+                            <p>满199减100</p>
+                        </div>
+                        <div> <img src="./images/xue-image/06-1.jpg " alt=" "></div>
+                    </a>
+                </div>
+                <div class="six-one-2 ">
+                    <a href=" ">
+                        <div>
+                            <h4>Ms.Maggie 冬季时尚</h4><br>
+                            <p>满199减100</p>
+                        </div>
+                        <div> <img src="./images/xue-image/06-1.jpg " alt=" "></div>
+                    </a>
+                </div>
+                <div class="six-one-2 ">
+                    <a href=" ">
+                        <div>
+                            <h4>Ms.Maggie 冬季时尚</h4><br>
+                            <p>满199减100</p>
+                        </div>
+                        <div> <img src="./images/xue-image/06-1.jpg " alt=" "></div>
+                    </a>
+                </div>
+                <div class="six-one-2 ">
+                    <a href=" ">
+                        <div>
+                            <h4>Ms.Maggie 冬季时尚</h4><br>
+                            <p>满199减100</p>
+                        </div>
+                        <div> <img src="./images/xue-image/06-1.jpg " alt=" "></div>
+                    </a>
+                </div>
+                <div class="six-one-2 ">
+                    <a href=" ">
+                        <div>
+                            <h4>Ms.Maggie 冬季时尚</h4><br>
+                            <p>满199减100</p>
+                        </div>
+                        <div> <img src="./images/xue-image/06-1.jpg " alt=" "></div>
+                    </a>
+                </div>
+                <div class="six-one-2 ">
+                    <a href=" ">
+                        <div>
+                            <h4>Ms.Maggie 冬季时尚</h4><br>
+                            <p>满199减100</p>
+                        </div>
+                        <div> <img src="./images/xue-image/06-1.jpg " alt=" "></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="six-three five-T ">
+            <p>
+                排行榜
+                <a href=" ">精品风向标&gt;</a>
+            </p>
+            <div class="five-O ">
+                <ul class="six-three-prev ">
+                    <a href=" ">
+                        <li>
+                            <img src="images/xue-image/06-2.jpg " alt=" ">
+                            <p>志高嵌入式电陶炉家用双头双灶镶嵌</p>
+                            <span>￥488.00</span>
+
+                        </li>
+                    </a>
+                    <a href=" ">
+                        <li>
+                            <img src="images/xue-image/06-2.jpg " alt=" ">
+                            <p>志高嵌入式电陶炉家用双头双灶镶嵌</p>
+                            <span>￥488.00</span>
+
+                        </li>
+                    </a>
+                    <a href=" ">
+                        <li>
+                            <img src="images/xue-image/06-2.jpg " alt=" ">
+                            <p>志高嵌入式电陶炉家用双头双灶镶嵌</p>
+                            <span>￥488.00</span>
+
+                        </li>
+                    </a>
+                </ul>
+                <ul class="six-three-next ">
+                    <a href=" ">
+                        <li>
+                            <img src="images/xue-image/06-2.jpg " alt=" ">
+                            <p>志高嵌入式电陶炉家用双头双灶镶嵌</p>
+                            <span>￥488.00</span>
+
+                        </li>
+                    </a>
+                    <a href=" ">
+                        <li>
+                            <img src="images/xue-image/06-2.jpg " alt=" ">
+                            <p>志高嵌入式电陶炉家用双头双灶镶嵌</p>
+                            <span>￥488.00</span>
+
+                        </li>
+                    </a>
+                    <a href=" ">
+                        <li>
+                            <img src="images/xue-image/06-2.jpg " alt=" ">
+                            <p>志高嵌入式电陶炉家用双头双灶镶嵌</p>
+                            <span>￥488.00</span>
+
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="seven w1200 TL ">
+        <div class="seven-fk ">
+            <a href=" ">
+                <div>
+                    <div class="seven-fk-up "></div>
+                    <p>商创众筹</p>
+                    <div class="seven-fk-down "></div>
+                    <span>备孕优孕检测仪</span>
+                </div>
+                <div><img src="images/xue-image/07-1.png " alt=" "></div>
+            </a>
+        </div>
+        <div class="seven-fk ">
+            <a href=" ">
+                <div>
+                    <div class="seven-fk-up "></div>
+                    <p>商创众筹</p>
+                    <div class="seven-fk-down "></div>
+                    <span>备孕优孕检测仪</span>
+                </div>
+                <div><img src="images/xue-image/07-1.png " alt=" "></div>
+            </a>
+        </div>
+        <div class="seven-fk ">
+            <a href=" ">
+                <div>
+                    <div class="seven-fk-up "></div>
+                    <p>商创众筹</p>
+                    <div class="seven-fk-down "></div>
+                    <span>备孕优孕检测仪</span>
+                </div>
+                <div><img src="images/xue-image/07-1.png " alt=" "></div>
+            </a>
+        </div>
+        <div class="seven-fk ">
+            <a href=" ">
+                <div>
+                    <div class="seven-fk-up "></div>
+                    <p>商创众筹</p>
+                    <div class="seven-fk-down "></div>
+                    <span>备孕优孕检测仪</span>
+                </div>
+                <div><img src="images/xue-image/07-1.png " alt=" "></div>
+            </a>
+        </div>
+        <div class="seven-fk ">
+            <a href=" ">
+                <div>
+                    <div class="seven-fk-up "></div>
+                    <p>商创众筹</p>
+                    <div class="seven-fk-down "></div>
+                    <span>备孕优孕检测仪</span>
+                </div>
+                <div><img src="images/xue-image/07-1.png " alt=" "></div>
+            </a>
+        </div>
+        <div class="seven-fk ">
+            <a href=" ">
+                <div>
+                    <div class="seven-fk-up "></div>
+                    <p>商创众筹</p>
+                    <div class="seven-fk-down "></div>
+                    <span>备孕优孕检测仪</span>
+                </div>
+                <div><img src="images/xue-image/07-1.png " alt=" "></div>
+            </a>
+        </div>
+    </div>
+    <ul class="eight w1200 TL ">
+        <li>
+            <a href="page/zhou.html ">
+                <img src="images/xue-image/08-1.jpg " alt=" ">
+                <p>喜瑞新款学院风韩版时尚太空棉宽松长袖印花圆领卫衣女</p>
+                <span>￥233.00</span> <s>￥279.59</s>
+            </a>
+        </li>
+    </ul>
+    <div class="aside ">
+        <ul>
+            <li>超级品牌</li>
+            <li>秒杀活动</li>
+            <li>尖货盛典</li>
+            <li>发现好货</li>
+            <li>商创特卖</li>
+            <li>活动专区</li>
+            <li>还没逛够</li>
+            <li class="fhdb ">TOP^</li>
+        </ul>
+    </div>
+    <!-- 尾部 -->
+    <div class="footer-new ">
+        <!-- 尾部的上面 -->
+        <div class="footer-top ">
+            <div class="top-text ">
+                <div class="server-list ">
+                    <div class="list-item ">
+                        <div class="icon1 icon "></div><span>七天包退</span></div>
+                    <div class="list-item ">
+                        <div class="icon icon2 "></div><span>正品保障</span></div>
+                    <div class="list-item ">
+                        <div class="icon icon3 "></div><span>好评如潮</span></div>
+                    <div class="list-item ">
+                        <div class="icon icon4 "></div><span>闪电发货</span></div>
+                    <div class="list-item ">
+                        <div class="icon icon5 "></div><span>权威荣誉</span></div>
+                </div>
+                <div class="server-contant ">
+                    <div class="contant-first ">
+                        <div class="icon1 icon "></div><span>4001-021-758</span>
+                    </div>
+                    <div class="contant-second ">
+                        <a href="# ">
+                            <div class="icon2 icon "></div><span>资讯客服</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 尾部的中间 -->
+        <div class="footer-center ">
+            <div class="center-banner ">
+                <div class="left ">
+                    <div class="left-item ">
+                        <h3>新手上路</h3>
+                        <ul>
+                            <li><a href="# ">售后流程</a></li>
+                            <li><a href="# ">订购流程</a></li>
+                            <li><a href="# ">订购方式</a></li>
+                        </ul>
+                    </div>
+                    <div class="left-item ">
+                        <h3>配送与支付</h3>
+                        <ul>
+                            <li><a href="# ">货到付款区域</a></li>
+                            <li><a href="# ">配送支付智能查询</a></li>
+                            <li><a href="# ">支付方式说明</a></li>
+                        </ul>
+                    </div>
+                    <div class="left-item ">
+                        <h3>服务保证</h3>
+                        <ul>
+                            <li><a href="# ">退换货原则</a></li>
+                            <li><a href="# ">售后服务保证</a></li>
+                            <li><a href="# ">产品质量保证</a></li>
+                        </ul>
+                    </div>
+                    <div class="left-item ">
+                        <h3>联系我们</h3>
+                        <ul>
+                            <li><a href="# ">网站故障报告</a></li>
+                            <li><a href="# ">选机咨询</a></li>
+                            <li><a href="# ">投诉与建议</a></li>
+                        </ul>
+                    </div>
+                    <div class="left-item ">
+                        <h3>会员中心</h3>
+                        <ul>
+                            <li><a href="# ">资金管理</a></li>
+                            <li><a href="# ">我的收藏</a></li>
+                            <li><a href="# ">我的订单</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right ">
+                    <div class="right-item1 margin ">
+                        <div class="code ">
+                            <img src="images/liuimages/ecjia_qrcode.jpg ">
+                        </div>
+                        <div class="text ">关注微信</div>
+                    </div>
+                    <div class="right-item1 ">
+                        <div class="code ">
+                            <img src="images/liuimages/liu2.jpg ">
+                        </div>
+                        <div class="text ">下载App</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bot ">
+            <div class="bot-banner ">
+                <p class="bot-p1 ">
+                    <a href="# ">首页</a><span class="spaer "></span>
+                    <a href="# ">隐私保护</a><span class="spaer "></span>
+                    <a href="# ">联系我们</a><span class="spaer "></span>
+                    <a href="# ">免责条款</a><span class="spaer "></span>
+                    <a href="# ">公司简介</a><span class="spaer "></span>
+                    <a href="# ">商家入驻</a><span class="spaer "></span>
+                    <a href="# ">供应商入驻</a><span class="spaer "></span>
+                    <a href="# ">意见反馈</a>
+                </p>
+                <p class="bot-p1 ">
+                    <a href="# ">b2b2c</a><span class="spaer "></span>
+                    <a href="# ">多用户商城系统</a><span class="spaer "></span>
+                    <a href="# ">商城系统</a><span class="spaer "></span>
+                    <a href="# ">ecjia新零售</a>
+                </p>
+                <p class="bot-p1 ">
+                    ICP备案证书号沪ICP备14029880号- 5
+                </p>
+                <p class="bot-p1 ">
+                    <a href="# ">版权所有&copy;2005-2021大商创，并保留所有权利。POWERED BY DSCMALL</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- 侧边栏开始 -->
+    <div class="screen-side ">
+        <div class="screen-side-lay ">
+            <div class="screen-side-con ">
+                <div class="side-con-top ">
+                    <ul>
+                        <li>
+                            <a href="#### " class="setting_hover ">
+                                <i class="setting "></i>
+                            </a>
+                            <div class="setting-con ">
+                                <div class="avatar_box ">
+                                    <p class="avatar_imgbox ">
+                                        <img src="./images/common/touxiang.jpg " width="100 " height="100 ">
+                                    </p>
+                                    <ul class="user_info ">
+                                        <li>用户名：暂无</li>
+                                        <li>级 别：暂无</li>
+                                    </ul>
+                                </div>
+                                <div class="login_btnbox ">
+                                    <a href="#### " class="login_order ">我的订单</a>
+                                    <a href="#### " class="login_favorite ">我的收藏</a>
+                                </div>
+                                <i class="icon_arrow_white "></i>
+                            </div>
+                        </li>
+                        <li id="shop_cart ">
+                            <a href="#### " class="cart_list ">
+                                <i class="message "></i>
+                                <div class="span ">购物车</div>
+                                <span class="cart_num ">0</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#### " class="dingdan_hover ">
+                                <i class="dingdan "></i>
+                                <div class="mp_tooltip " style="left: -121px;visibility: hidden; ">
+                                    <font id="mpbtn_money " style="font-size:12px; cursor:pointer; ">我的订单</font>
+                                    <i class="icon_arrow_right_black "></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#### " class="yhq_hover ">
+                                <i class="yhq "></i>
+                                <div class="mp_tooltip " style="left: -121px;visibility: hidden; ">
+                                    <font id="mpbtn_money " style="font-size:12px; cursor:pointer; ">优惠券</font>
+                                    <i class="icon_arrow_right_black "></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#### " class="zichan_hover ">
+                                <i class="zichan "></i>
+                                <div class="mp_tooltip " style="left: -121px;visibility: hidden; ">
+                                    <font id="mpbtn_money " style="font-size:12px; cursor:pointer; ">我的资产</font>
+                                    <i class="icon_arrow_right_black "></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#### " class="zhuji_hover ">
+                                <i class="zhuji "></i>
+                                <div class="mp_tooltip " style="left: -121px;visibility: hidden; ">
+                                    <font id="mpbtn_money " style="font-size:12px; cursor:pointer; ">我的足迹</font>
+                                    <i class="icon_arrow_right_black "></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#### " class="collect_hover ">
+                                <i class="collect "></i>
+                                <div class="mp_tooltip " style="left: -121px;visibility: hidden; ">
+                                    <font id="mpbtn_money " style="font-size:12px; cursor:pointer; ">我的收藏</font>
+                                    <i class="icon_arrow_right_black "></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#### " class="email_hover ">
+                                <i class="email "></i>
+                                <div class="mp_tooltip " style="left: -121px;visibility: hidden; ">
+                                    <font id="mpbtn_money " style="font-size:12px; cursor:pointer; ">邮箱订阅</font>
+                                    <i class="icon_arrow_right_black "></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="side-con-bottom ">
+                    <ul>
+                        <li>
+                            <a href="#### " class="kf_hover ">
+                                <i class="kf "></i>
+                                <div class="mp_tooltip " style="left: -121px;visibility: hidden; ">
+                                    <font id="mpbtn_money " style="font-size:12px; cursor:pointer; ">客服中心</font>
+                                    <i class="icon_arrow_right_black "></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="return_top_hover ">
+                            <a href="#### " class="return_top_sport ">
+                                <i class="return_top "></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="screen-side-car ">
+                <div class="side-car-title ">
+                    <p>购物车</p>
+                    <a href="#### "><i class="close "></i></a>
+                </div>
+                <div class="side-car-con ">
+                    <div class="ecs-tbar-tipbox2 ">
+                        <div class="tip-inner ">
+                            <b class="b-face-fd "></b>
+                            <div class="tip-text ">购物车空空的，赶快去挑选心仪的商品吧~<br><a href="#### ">去首页看看</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-car-com ">
+                    <p>共<span>0</span>件商品</p>
+                    <div class="com_price ">￥<b>0.00</b></div>
+                    <a href="#### ">
+                        <div class="to_shopCart ">去购物车结算</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 侧边栏结束 -->
+    <!-- 邮箱订阅开始 -->
+    <div class="email_box ">
+        <div class="w1200 email_box_con ">
+            <div class="email_box_lay ">
+                <input type="text " placeholder="请输入你的邮箱账号 ">
+                <a href="#### " class="book ">
+                    <span>订阅</span>
+                </a>
+                <a href="#### " class="back_book ">
+                    <span>退订</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 邮箱订阅结束 -->
+    <script src="js/side-bar.js "></script>
 </body>
+<script src="http://code.jquery.com/jquery-3.4.1.js " type="text/javascript "></script>
+<script src="./js/index.js "></script>
+<script src="./lib/swiper-6.1.2/package/swiper-bundle.min.js "></script>
+
+<script>
+    var swiper = new Swiper('.two-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
 
 </html>
