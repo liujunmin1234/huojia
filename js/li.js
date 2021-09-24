@@ -119,7 +119,7 @@ goodsList.find('.sider ul').each(function(index){
 //切换商品的展示图
 goodsList.find('.sider').each(function(index){
     $(this).find('li').each(function(num){
-        // $(this).parents('.sider').prev().find('a').attr('href','zhou.html?module=page1&id='+pageArr[index].id+'&index=index&num=num')
+        $(this).parents('.sider').prev().find('a').attr('href','zhou.html?module=page1&id='+pageArr[index].id+'&index=index&num=num')
         $(this).mouseenter(function(){
             var path =  pageArr[index].children[num].bigPic;
             $(this).parents('.sider').prev().find('img').attr('src',path)
@@ -189,7 +189,7 @@ $('.filter-sort a').eq(0).click(function(){
     //切换商品的展示图
 goodsList.find('.sider').each(function(index){
     $(this).find('li').each(function(num){
-        // $(this).parents('.sider').prev().find('a').attr('href','zhou.html?module=page1&id='+pageArr[index].id+'&index=index&num=num')
+        $(this).parents('.sider').prev().find('a').attr('href','zhou.html?module=page1&id='+pageArr[index].id+'&index=index&num=num')
         $(this).mouseenter(function(){
             var path =  pageArr[index].children[num].bigPic;
             $(this).parents('.sider').prev().find('img').attr('src',path)
@@ -255,7 +255,7 @@ $('.filter-sort a').eq(1).click(function(){
         $(this).find('li').each(function(num){
             
             console.log(arrPage[index].children[num].bigPic)
-            // $(this).parents('.sider').prev().find('a').attr('href','zhou.html?module=page1&id='+pageArr[index].id+'&index=index&num=num')
+            $(this).parents('.sider').prev().find('a').attr('href','zhou.html?module=page1&id='+pageArr[index].id+'&index=index&num=num')
             $(this).mouseenter(function(){
                 console.log(0)
                 var path =  arrPage[index].children[num].bigPic;
