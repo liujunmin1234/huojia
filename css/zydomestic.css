@@ -1,0 +1,992 @@
+    .Zyall {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    /* 头部 */
+    
+    .zytop {
+        width: 1200px;
+        height: 400px;
+        position: relative;
+    }
+    /* 头部侧边栏 */
+    
+    .ZyleftAside {
+        width: 200px;
+        background-color: #2E84E9;
+        position: absolute;
+        z-index: 99;
+    }
+    
+    .ZyleftAside li {
+        width: 200px;
+        height: 80px;
+        border-bottom: 1px dotted #2E84E9;
+        position: relative;
+        left: 8px;
+        top: 0px;
+    }
+    
+    .ZyleftAside li a {
+        color: white;
+    }
+    
+    .ZyleftAside li>div {
+        width: 150px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%)translateY(-50%);
+    }
+    
+    .ZyleftAside li h2 {
+        font-weight: 800;
+    }
+    /* 头部 */
+    
+    .changePage {
+        width: 100%;
+        height: 40px;
+        border-bottom: 2px solid #2E84E9;
+    }
+    
+    .changePage .changePage-xin {
+        width: 1200px;
+        height: 40px;
+        margin: 0 auto;
+    }
+    
+    .changePage .changePage-left {
+        width: 200px;
+        height: 41px;
+        float: left;
+        background-color: #2E84E9;
+    }
+    
+    .changePage-left .left-content {
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        line-height: 40px;
+    }
+    
+    .changePage-right {
+        width: 935px;
+        height: 40px;
+        float: right;
+    }
+    
+    .changePage-right .changePage-rightLi {
+        width: 90px;
+        height: 40px;
+        float: left;
+        text-align: center;
+        line-height: 40px;
+    }
+    
+    .changePage-rightLi a {
+        font-size: 16px;
+        color: black;
+    }
+    /* 轮播 */
+    
+    .zyLunbo {
+        width: 1200px;
+        height: 400px;
+        position: relative;
+        left: 0px;
+        top: 0px;
+        overflow: hidden;
+    }
+    
+    .zyLunbo li {
+        width: 1200px;
+    }
+    
+    .zyLunbo li {
+        width: 1200px;
+        float: left;
+        overflow: hidden;
+    }
+    
+    .zyLunbo li img {
+        width: 1950px;
+        margin-left: -300px;
+    }
+    
+    .zyLunboList {
+        width: 600%;
+        position: absolute;
+        left: -1200px;
+        top: 0px;
+    }
+    
+    .zytipList {
+        width: 100px;
+        height: 20px;
+        background-color: rgba(255, 255, 255, 0.5);
+        z-index: 99;
+        position: absolute;
+        border-radius: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 362px;
+    }
+    
+    .zytipList span {
+        width: 12px;
+        height: 12px;
+        background-color: white;
+        border-radius: 50%;
+        opacity: 0.7;
+        float: left;
+        margin: 4px;
+    }
+    
+    .zytipList .zyactive {
+        background-color: rgb(255, 255, 255);
+        opacity: 1;
+    }
+    
+    .zylunboimg {
+        position: absolute;
+        z-index: 99;
+        right: 0px;
+        top: 50px;
+    }
+    /* 侧边栏隐藏 */
+    
+    .zytophide {
+        width: 300px;
+        height: 350px;
+        background-color: white;
+        z-index: 99;
+        position: absolute;
+        left: 200px;
+        top: 20px;
+        display: none;
+    }
+    
+    .zytophidelist {
+        width: 200px;
+        height: 300px;
+        position: relative;
+        left: 20px;
+    }
+    
+    .zytophidelist span {
+        width: 80px;
+        height: 30px;
+        background-color: rgb(245, 245, 245);
+        display: inline-block;
+        margin-top: 10px;
+        text-align: center;
+        line-height: 30px;
+    }
+    
+    .zytophide h2 {
+        font-weight: 800;
+    }
+    
+    .zyhidetit {
+        width: 160px;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px dotted black;
+        margin-bottom: 10px;
+        position: relative;
+        left: 20px;
+    }
+    /* 热门推荐 */
+    
+    .zyrmtj {
+        width: 1200px;
+        height: 350px;
+        position: relative;
+    }
+    
+    .zyrmtjtit {
+        width: 1200px;
+        height: 30px;
+        border-bottom: 2px solid black;
+        margin-top: 50px;
+    }
+    
+    .zyrmtjtit span:not(.zyrmtjtit1) {
+        width: 80px;
+        height: 30px;
+        float: right;
+        text-align: center;
+        border-left: 1px solid rgb(241, 241, 241);
+        border-right: 1px solid rgb(241, 241, 241);
+    }
+    
+    .zyrmtjtit .zyrmtjtit1 {
+        font-weight: 800;
+        float: left;
+        font-size: 20px;
+    }
+    
+    .zyrmtjsp {
+        margin-top: 10px;
+    }
+    
+    .zyrmtjsp li {
+        float: left;
+        width: 200px;
+        height: 300px;
+        border: 1px solid rgb(233, 232, 232);
+        box-sizing: border-box;
+        position: relative;
+    }
+    
+    .zyrmtjsp li img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .zyrmckxq {
+        width: 200px;
+        height: 30px;
+        background-color: red;
+        color: white;
+        text-align: center;
+        opacity: 0;
+    }
+    
+    .zyrmckxq a {
+        color: white;
+        line-height: 30px;
+    }
+    
+    .zyrmckxq a:hover {
+        color: white;
+    }
+    
+    .zyrmtjsp li>div {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+    /* 品牌旗舰 */
+    
+    .zyppqj {
+        width: 1200px;
+        height: 300px;
+        position: relative;
+        border: 1px solid transparent;
+    }
+    
+    .zyppqjlist {
+        width: 1200px;
+        height: 300px;
+        position: relative;
+    }
+    
+    .zyppqjlistleft {
+        width: 750px;
+        height: 300px;
+        position: relative;
+    }
+    
+    .zyppqjlistleft img:nth-of-type(3) {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    
+    .zyppqjlistleft img:nth-of-type(1) {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    
+    .zyppqjlistleft img:nth-of-type(2) {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+    
+    .zyppqjlistright {
+        width: 450px;
+        height: 300px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    
+    .zyppqjlistright li {
+        float: left;
+    }
+    
+    .zyppqjlistright img {
+        width: 150px;
+        height: 75px;
+        border: 1px solid rgb(238, 237, 237);
+        box-sizing: border-box;
+    }
+    
+    .zyppqjtit {
+        width: 1200px;
+        height: 30px;
+        margin-top: 15px;
+        margin-bottom: 23px;
+    }
+    
+    .zyppqjtit h2 {
+        font-size: 26px;
+    }
+    
+    .cfdq {
+        position: relative;
+        width: 1200px;
+        height: 300px;
+        margin-top: 80px;
+    }
+    
+    .cfdqtit {
+        width: 1200px;
+        height: 30px;
+        position: relative;
+    }
+    
+    .cfdqnrleft img {
+        width: 280px;
+        height: 460px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    
+    .cfdqtit span {
+        float: left;
+        text-align: center;
+        width: 80px;
+        height: 29px;
+        line-height: 30px;
+        border-bottom: 1px solid #2E84E9;
+    }
+    
+    .cfdqtit>div {
+        float: right;
+    }
+    
+    .cfdqtit>span {
+        float: left;
+        border-bottom: 1px solid #2E84E9;
+        width: 797px;
+        height: 30px;
+        text-align: left;
+    }
+    
+    .cfdqtit .cftive {
+        border-top: 1px solid #2E84E9;
+        border-bottom: 1px solid white;
+        border-left: 1px solid #2E84E9;
+        border-right: 1px solid #2E84E9;
+    }
+    
+    .cfdqnr {
+        width: 1200px;
+        height: 400px;
+        position: relative;
+        left: 0px;
+        top: 0px;
+        margin-top: 20px;
+    }
+    
+    .cfdqnrleftf {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-35%);
+        top: 330px;
+        z-index: 99;
+        box-sizing: border-box;
+    }
+    
+    .cfdqnrleftf span {
+        width: 100px;
+        height: 35px;
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: white;
+        margin: 2px;
+        text-align: center;
+        line-height: 35px;
+    }
+    
+    .cfdqnrright>a img {
+        width: 280px;
+        height: 280px;
+        margin: 30px;
+    }
+    
+    .cfdqnrright {
+        position: absolute;
+        width: 350px;
+        height: 460px;
+        left: 280px;
+        top: 0px;
+        box-sizing: border-box;
+        border: 1px solid rgb(238, 238, 238);
+        display: none;
+    }
+    
+    .cfright {
+        width: 280px;
+        height: 100px;
+        margin-left: 30px;
+        background-color: rgb(240, 240, 240);
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    
+    .cfprice {
+        font-weight: 800;
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .cfdqnrleft {
+        width: 280px;
+        height: 460px;
+        position: relative;
+    }
+    
+    .cfxq {
+        width: 80px;
+        height: 30px;
+        text-align: center;
+        background-color: red;
+        float: right;
+        line-height: 30px;
+        color: white;
+    }
+    
+    .cfxww {
+        width: 600px;
+        height: 460px;
+        position: absolute;
+        left: 350px;
+        top: 0px;
+    }
+    
+    .cfxww img {
+        width: 143px;
+        height: 143px;
+    }
+    
+    .cfxww li {
+        width: 190px;
+        height: 230px;
+        float: left;
+        border: 1px solid rgb(228, 228, 228);
+        box-sizing: border-box;
+        padding-left: 20px;
+    }
+    
+    .cfxww p {
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .cfxww div a {
+        color: red;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .gglist {
+        width: 1200px;
+        height: 40px;
+        position: relative;
+        top: 224px;
+        left: 0px;
+    }
+    
+    .gglist li {
+        float: left;
+    }
+    
+    .gglist img {
+        width: 96px;
+        height: 43px;
+    }
+    
+    .jgg1 {
+        width: 1200px;
+        height: 100px;
+        position: relative;
+        top: 234px;
+    }
+    /* 大家电 */
+    
+    .djd {
+        width: 1200px;
+        height: 800px;
+        position: relative;
+        left: 0px;
+        top: 257px;
+    }
+    
+    .djdtit {
+        width: 1200px;
+        height: 30px;
+        position: relative;
+    }
+    
+    .djdtit span {
+        float: left;
+        text-align: center;
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        border-bottom: 1px solid #2E84E9;
+    }
+    
+    .djdtit>div {
+        float: right;
+    }
+    
+    .djdtit>span {
+        float: left;
+        border-bottom: 1px solid #2E84E9;
+        width: 797px;
+        height: 30px;
+        text-align: left;
+    }
+    
+    .djdtit .djtive {
+        border-top: 1px solid #2E84E9;
+        border-bottom: 1px solid white;
+        border-left: 1px solid #2E84E9;
+        border-right: 1px solid #2E84E9;
+    }
+    
+    .djdnrright {
+        position: absolute;
+        width: 350px;
+        height: 460px;
+        left: 280px;
+        top: 0px;
+        box-sizing: border-box;
+        border: 1px solid rgb(238, 238, 238);
+        display: none;
+    }
+    /* 个护健康 */
+    
+    .ghjk {
+        width: 1200px;
+        height: 800px;
+        position: relative;
+        left: 0px;
+        top: 167px;
+    }
+    
+    .ghjktit {
+        width: 1200px;
+        height: 30px;
+        position: relative;
+    }
+    
+    .ghjktit span {
+        float: left;
+        text-align: center;
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        border-bottom: 1px solid #2E84E9;
+    }
+    
+    .ghjktit>div {
+        float: right;
+    }
+    
+    .ghjktit>span {
+        float: left;
+        border-bottom: 1px solid #2E84E9;
+        width: 797px;
+        height: 30px;
+        text-align: left;
+    }
+    
+    .ghjktit .ghtive {
+        border-top: 1px solid #2E84E9;
+        border-bottom: 1px solid white;
+        border-left: 1px solid #2E84E9;
+        border-right: 1px solid #2E84E9;
+    }
+    
+    .ghjknrright {
+        position: absolute;
+        width: 350px;
+        height: 460px;
+        left: 280px;
+        top: 0px;
+        box-sizing: border-box;
+        border: 1px solid rgb(238, 238, 238);
+        display: none;
+    }
+    
+    .cfdqnrleft img {
+        width: 280px;
+        height: 460px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    
+    .ghjknrright>a img {
+        width: 280px;
+        height: 280px;
+        margin: 30px;
+    }
+    
+    .gglist2 {
+        width: 1200px;
+        height: 40px;
+        position: relative;
+        top: 80px;
+        left: 0px;
+    }
+    
+    .gglist2 li {
+        float: left;
+    }
+    
+    .gglist2 img {
+        width: 96px;
+        height: 43px;
+    }
+    
+    .jgg12 {
+        width: 1200px;
+        height: 100px;
+        position: relative;
+        top: 80px;
+    }
+    /* 五金家装 */
+    
+    .wjjz {
+        width: 1200px;
+        height: 800px;
+        position: relative;
+        left: 0px;
+        top: 67px;
+    }
+    
+    .wjjztit {
+        width: 1200px;
+        height: 30px;
+        position: relative;
+    }
+    
+    .wjjztit span {
+        float: left;
+        text-align: center;
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        border-bottom: 1px solid #2E84E9;
+    }
+    
+    .wjjztit>div {
+        float: right;
+    }
+    
+    .wjjztit>span {
+        float: left;
+        border-bottom: 1px solid #2E84E9;
+        width: 957px;
+        height: 30px;
+        text-align: left;
+    }
+    
+    .wjjztit .wjtive {
+        border-top: 1px solid #2E84E9;
+        border-bottom: 1px solid white;
+        border-left: 1px solid #2E84E9;
+        border-right: 1px solid #2E84E9;
+    }
+    
+    .wjjznrright {
+        position: absolute;
+        width: 350px;
+        height: 460px;
+        left: 280px;
+        top: 0px;
+        box-sizing: border-box;
+        border: 1px solid rgb(238, 238, 238);
+        display: none;
+    }
+    
+    .wjjznrleft img {
+        width: 280px;
+        height: 460px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    
+    .wjjznrright>a img {
+        width: 280px;
+        height: 280px;
+        margin: 30px;
+    }
+    
+    .gglist3 {
+        width: 1200px;
+        height: 40px;
+        position: relative;
+        top: 80px;
+        left: 0px;
+    }
+    
+    .gglist3 li {
+        float: left;
+    }
+    
+    .gglist3 img {
+        width: 96px;
+        height: 43px;
+    }
+    
+    .jgg13 {
+        width: 1200px;
+        height: 100px;
+        position: relative;
+        top: 80px;
+    }
+    /* 生活电器 */
+    
+    .shdq {
+        width: 1200px;
+        height: 650px;
+        position: relative;
+        left: 0px;
+        top: 20px;
+    }
+    
+    .shdqtit {
+        width: 1200px;
+        height: 30px;
+        position: relative;
+    }
+    
+    .shdqtit span {
+        float: left;
+        text-align: center;
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        border-bottom: 1px solid #2E84E9;
+    }
+    
+    .shdqtit>div {
+        float: right;
+    }
+    
+    .shdqtit>span {
+        float: left;
+        border-bottom: 1px solid #2E84E9;
+        width: 957px;
+        height: 30px;
+        text-align: left;
+    }
+    
+    .shdqtit .shtive {
+        border-top: 1px solid #2E84E9;
+        border-bottom: 1px solid white;
+        border-left: 1px solid #2E84E9;
+        border-right: 1px solid #2E84E9;
+    }
+    
+    .shdqnrright {
+        position: absolute;
+        width: 350px;
+        height: 460px;
+        left: 280px;
+        top: 0px;
+        box-sizing: border-box;
+        border: 1px solid rgb(238, 238, 238);
+        display: none;
+    }
+    
+    .shdqnrleft img {
+        width: 280px;
+        height: 460px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    
+    .shdqnrright>a img {
+        width: 280px;
+        height: 280px;
+        margin: 30px;
+    }
+    
+    .gglist4 {
+        width: 1200px;
+        height: 40px;
+        position: relative;
+        top: 40px;
+        left: 0px;
+    }
+    
+    .gglist4 li {
+        float: left;
+    }
+    
+    .gglist4 img {
+        width: 96px;
+        height: 43px;
+    }
+    /* 随手购 */
+    
+    .ssg {
+        width: 1200px;
+        height: 400px;
+        position: relative;
+        top: 0px;
+        overflow: hidden;
+    }
+    
+    .ssgtit {
+        width: 1200px;
+        height: 30px;
+        font-size: 20px;
+        position: relative;
+    }
+    
+    .ssgtitr {
+        /* width: 160px; */
+        /* height: 30px; */
+        float: right;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    
+    .ssgtitr span {
+        float: left;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 2px;
+        background-color: grey;
+    }
+    
+    .ssgtitr .ssgtactive {
+        width: 20px;
+        border-radius: 20px;
+        background-color: red;
+    }
+    
+    .ssgn {
+        width: 1200px;
+        height: 300px;
+        position: relative;
+    }
+    
+    .ssprev,
+    .ssnext {
+        display: inline-block;
+        width: 40px;
+        height: 80px;
+        background-color: grey;
+        color: white;
+        font-size: 30px;
+        line-height: 80px;
+        text-align: center;
+        display: none;
+    }
+    
+    .ssprev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0px;
+    }
+    
+    .ssnext {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0px;
+    }
+    
+    .ssgnr {
+        width: 1200px;
+        height: 300px;
+        position: relative;
+    }
+    
+    .ssgnrlist {
+        width: 300%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    
+    .ssgprice,
+    .ssgxq {
+        text-align: center;
+    }
+    
+    .ssgnr .ssgxqactive {
+        background-color: red;
+        color: white;
+    }
+    
+    .ssg li {
+        width: 200px;
+        height: 300px;
+        box-sizing: border-box;
+        float: left;
+        border: 1px dotted rgb(223, 223, 223);
+        padding-top: 20px;
+    }
+    
+    .ssg li>div {
+        width: 160px;
+        height: 260px;
+        margin: 0 auto;
+    }
+    
+    .ssg img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .ssgxq {
+        width: 100px;
+        height: 30px;
+        border: 1px solid red;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 30px;
+    }
+    
+    .ssgprice a {
+        font-size: 20px;
+        color: red;
+    }
+    
+    .ssgxq a {
+        color: red;
+    }
+    
+    .ssg li>div>div {
+        margin-top: 5px;
+    }
+    
+    .activ {
+        display: block;
+    }
