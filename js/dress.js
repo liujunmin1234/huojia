@@ -317,6 +317,8 @@ shopShow.find('.fristShop').each(function(index){
         $(this).find('img').attr('src',path)
         $(this).find('.shopInt').text(arr[num].name)
         $(this).find('.shopPrice').text('￥'+arr[num].discountPrice)
+        $(this).find('a').attr('href','zhou.html?module=page2&id='+arr[num].id)
+
     })
 })
 var shopShow = $('.rightShop1')
@@ -336,6 +338,8 @@ shopShow.find('.fristShop-li1').each(function(index){
             $(this).find('img').attr('src',path)
             $(this).find('.shopInt').text(arr[num].name)
             $(this).find('.shopPrice').text('￥'+arr[num].discountPrice)
+            $(this).find('a').attr('href','zhou.html?module=page2&id='+arr[num].id)
+
         })
     
     }
@@ -356,6 +360,8 @@ shopShow.find('.fristShop-li2').each(function(index){
         $(this).find('img').attr('src',path)
         $(this).find('.shopInt').text(arr[num].name)
         $(this).find('.shopPrice').text('￥'+arr[num].discountPrice)
+        $(this).find('a').attr('href','zhou.html?module=page2&id='+arr[num].id)
+
     })
 })
 
@@ -373,44 +379,9 @@ shopShow.find('.fristShop-li2').each(function(index){
                     'top': -ulheight
                 }, 200, 'linear')
             }
-            // 滚动条滚动的最大距离总高度
-            // var scrollMaxH = $('.header-scorllBar').height() - $('.header-bar').height();
-            // // 三个li的高度,让最后一个li永远在最下面
-            // var lisH = $('.citylist').children('li').eq(0).height() * 3;
-            // // 滚动条滚动的偏移量
-            // var bi = ulheight * scrollMaxH / ($('.citylist').height() - lisH);
-            // if (index > 0 && index < length - 2) {
-            //     $('.header-bar').stop().animate({
-            //         'top': bi
-            //     }, 200);
-            // } else if (index == 0) {
-            //     $('.header-bar').css('top', 0);
-            // }
         })
     });
     $(".area").mouseup(function () {
         $(".city-content").off('mousemove');
     });
-    // 滚动条拖拽
-    // $('.header-bar').mousedown(function (e) {
-    //     // 鼠标在滚动条中的落点坐标
-    //     var disY = e.pageY - $('.header-bar').offset().top;
-    //     // 滚动跳拖动的最大距离
-    //     var barMaxHeight = $('.header-scorllBar').height() - $('.header-bar').height();
-    //     // ul的高度与滚动条移动最大范围的比
-    //     var proportion = ($('.citylist').height() - 150) / barMaxHeight;
-    //     $(".city-content").mousemove(function (e) {
-    //         // 滚动条在父盒子中移动的坐标位置
-    //         var oTop = e.pageY - $(this).offset().top;
-    //         // 相对应的ul所移动的距离
-    //         var ulTop = -proportion * oTop + 'px';
-    //         if (oTop >= 0 && oTop <= barMaxHeight) {
-    //             oTop = oTop + 'px';
-    //             //滚动跳拖动距离
-    //             $('.header-bar').css('top', oTop);
-    //             // 改变相对应的ul的top值
-    //             $('.citylist').css('top', ulTop);
-    //         };
-    //     });
-    // });
-    // 解绑
+

@@ -1,0 +1,74 @@
+.province{
+    border-spacing: 10px;
+    font-size: 16px;
+}
+.province tr{
+    height: 50px;
+}
+.province select{
+    appearance: none;
+}
+.form-group,.form-control{
+    display: inline-block;
+    width: 80px;
+    border: none;
+}
+.provaince td{
+    text-align: center;
+}
+.province tr td:nth-child(1){
+    width: 40px;
+}
+.form-group{
+    margin-top: 15px;
+}
+.have-huo{
+    font-size: 16px;
+    font-weight: 700;
+}
+.sczy{
+    font-weight: 700;
+    color: red;
+}
+.number{
+    position: relative;
+    width: 170px;
+    height: 40px;
+}
+.number span{
+    display: inline-block;
+}
+.number span:nth-child(1){
+    width: 80px;
+    height: 100%;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 40px;
+}
+.number span:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 80px;
+    width: 40px;
+    height: 50%;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.number span:nth-child(3){
+    position: absolute;
+    top: 19px;
+    left: 80px;
+    width: 40px;
+    height: 50%;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.form-control{
+    outline-color: none;
+}
