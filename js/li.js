@@ -202,7 +202,6 @@ goodsList.find('.sider').each(function(index){
 //按销量排序
 var arrGoods = [];
 var arrPage = [];
-console.log(arrPage)
 //重新渲染主栏商品
 $('.filter-sort a').eq(1).click(function(){
     //清空小图片
@@ -254,8 +253,11 @@ $('.filter-sort a').eq(1).click(function(){
     //切换商品的展示图
     goodsList.find('.sider').each(function(index){
         $(this).find('li').each(function(num){
+            
+            console.log(arrPage[index].children[num].bigPic)
             // $(this).parents('.sider').prev().find('a').attr('href','zhou.html?module=page1&id='+pageArr[index].id+'&index=index&num=num')
             $(this).mouseenter(function(){
+                console.log(0)
                 var path =  arrPage[index].children[num].bigPic;
                 $(this).parents('.sider').prev().find('img').attr('src',path)
             })
@@ -279,7 +281,7 @@ $('.filter-sort a').eq(4).click(function(){
     })
     for(var i=0;i<arrGoods.length;i++){
         for(var j=0;j<pageArr.length;j++){
-            if(arrGoods[i]==pageArr[j].introduce){
+            if(arrGoods[i]==pageArr[j].discountPrice){
                 arrPage.push(pageArr[j])
             }
         }
